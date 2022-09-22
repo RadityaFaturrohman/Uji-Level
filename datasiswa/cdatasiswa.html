@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../img/icon.png" alt="" class="logo-img">
+            <p>Home Book</p>
+            <div class="line"></div>
+        </div>
+
+        <a href="index.php" class="actived"><i class="fa-solid fa-user"></i> Data Siswa <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="../databuku/index.php"><i class="fa-solid fa-book"></i></i> Data Buku <i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+
+    <div class="main">
+        <p class="title2">Ingin Baca Buku Apa Hari Ini?</p>
+        <form action="submit.php" method="post">
+            <div class="form">
+                <p><label>Id </label><label class="ltext1">:</label><input type="number" name="Id_Siswa" required="required" placeholder="Berapa Id mu?"></p>
+                <p><label>Nama </label><label class="ltext2">:</label><input type="text" name="Nama_Siswa" required="required" placeholder="Masukkan Namamu?"></p>
+                <p><label>Umur </label><label class="ltext3">:</label><input type="number" name="Umur" required="required" placeholder="Berapa Umurmu?"></label></p>
+                <p><label>Gender </label> <label class="ltext4">:</label><select id="Gender" name="Gender" placeholder="Apa Gendermu?">
+                    <option>Laki-laki</option>
+                    <option>Perempuan</option>
+                </select></p>
+                <p><label>Kelas </label> <label class="ltext5">:</label><select id="Kelas" name="Kelas" placeholder="Kelas Berapa Kamu?">
+                    <option>X</option>
+                    <option>XI</option>
+                    <option>XII</option>
+                </select></p>
+                <p><label>Alamat </label><label class="ltext6">:</label><input type="text" name="alamat" required="required" placeholder="Dimana alamatmu?"></label></p>
+                <p><label>Tanggal </label><label class="ltext7">:</label><input type="text" name="Tgl_Pinjam" onfocus="(this.type ='date')" required="required" placeholder="Kapan kamu ingin meminjam buku?"></label></p>
+                <input type="submit" name="submit" value="Submit" class="submit-btn">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

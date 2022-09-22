@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@600;700&display=swap');
+
+body{
+    background-image: url(img/library.jpg);
+    background-size: cover;
+}
+
+.container{
+    position: absolute;
+    top: 54%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    height: 480px;
+    width: 520px;
+}
+
+.home-logo{
+    margin-left:32%;
+    height: 87px;
+}
+
+h1{
+    margin: 0 0 0 6%;
+    font-size: 92px;
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-weight: bold;
+    color: #f5f6f6;
+    -webkit-text-stroke: 2px navy;
+}
+
+p{
+    font-size: 24px;
+    color: #f5f6f6;
+    text-align: center;
+    margin-left: 4%;
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-weight: 600;
+}
+
+.enter-btn{
+    margin-top: 20px;
+    height:40px;
+    width: 120px;
+    background-color: #d4d0d0;
+    opacity: 55%;
+    border-radius: 10px;
+    border: none;
+    margin-left: 210px;
+    font-size: 28px;
+    color: #162148;
+    font-family: 'Familjen Grotesk', sans-serif;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    transition: ease 0.3s;
+}
+
+.enter-btn:hover, .enter-btn a:hover{
+    opacity: 90%;
+    color: #1b2857;
+}
